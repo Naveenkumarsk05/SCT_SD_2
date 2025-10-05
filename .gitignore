@@ -1,0 +1,5 @@
+*.exe
+guessing_game
+*.o
+build/
+.DS_Store
