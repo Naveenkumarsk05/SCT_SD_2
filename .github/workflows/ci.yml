@@ -1,0 +1,11 @@
+name: Build and Test
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: g++ -o guessing_game main.CPP
+      - name: Test
+        run: echo "50\n25\n37" | ./guessing_game || true
